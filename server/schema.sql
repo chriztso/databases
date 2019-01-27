@@ -5,9 +5,9 @@ USE chat;
 
 CREATE TABLE messages (
   /* Describe your table here.*/
-  name VARCHAR(35), 
-  rooms VARCHAR(35),
-  createdAt VARCHAR(35)
+  username VARCHAR(35), 
+  message VARCHAR(35),
+  roomname VARCHAR(35)
 );
 
 
@@ -15,23 +15,15 @@ CREATE TABLE messages (
 CREATE TABLE rooms (
   /* Describe your table here.*/
   id VARCHAR(35), 
-  rooms VARCHAR(35),
-  messages VARCHAR(35)
+  roomname VARCHAR(35)
 );
 
 CREATE TABLE users (
   /* Describe your table here.*/
   id VARCHAR(35), 
-  users VARCHAR(35),
-  messages VARCHAR(35)
+  username VARCHAR(35)
 );
 
-CREATE TABLE createdAt (
-  /* Describe your table here.*/
-  id VARCHAR(35), 
-  createdAt VARCHAR(35),
-  messages VARCHAR(35)
-);
 
 /*  Execute this file from the command line by typing:
  *    mysql -u root < server/schema.sql
